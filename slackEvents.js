@@ -9,6 +9,13 @@ module.exports = {
       slackClient.onEvent('app_mention', async (message) => {
         // Only respond to messages that have no subtype (plain messages)
         if (!message.subtype) {
+          // if (message.text.indexOf('hi') >= 0) {	
+                    slackClient.postMessage({ 	
+                      channel: message.channel, 	
+                      text: `zzz` 	
+                    })	
+                      .catch(console.error);
+                  // }
           const title = slackClient.extractSearchText(message.text);
 
           if (!title) {

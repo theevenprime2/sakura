@@ -16,7 +16,7 @@ module.exports = {
                     })	
                       .catch(console.error);
                   // }
-          const title = slackClient.extractSearchText(message.text);
+          const title = null; //slackClient.extractSearchText(message.text);
 
           if (!title) {
             slackClient.postMessage(message.channel, 'Invalid search: try "@Sakura <Insert Anime Name>"');

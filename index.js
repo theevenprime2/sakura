@@ -23,6 +23,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use('/slack/events', slackClient.events.expressMiddleware());
 
-http.createServer(app).listen(port, () => {
-  console.log(`Server listening on port ${port}`);
-});
+app.listen(port, () => console.log(`zServer listening on port ${port}`))
+
+// http.createServer(app).listen(port, () => {
+//   console.log(`Server listening on port ${port}`);
+// });

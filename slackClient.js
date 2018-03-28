@@ -40,8 +40,8 @@ class SlackClient {
     const mentions = text.match(/<@[a-zA-Z0-9]*>/g);
 
     if (mentions.length > 1) return null;
-console.log(text);
-    const { 0: match, index: matchIndex } = text.match('@sakurabot');
+
+    const { 0: match, index: matchIndex } = text.match(`<@${BOT_ID}>`);
 
     if (matchIndex > 0) return null;
 

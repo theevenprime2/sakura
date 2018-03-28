@@ -1,3 +1,3 @@
 module.exports = {
-  BOT_ID: 'A9WS5D882'
+  BOT_ID: 'U9WB3N9K3'
 };

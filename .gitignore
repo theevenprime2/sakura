@@ -1,6 +1,7 @@
 node_modules/
 .env
 db/data
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml

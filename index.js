@@ -10,7 +10,7 @@ const { WebClient } = require('@slack/client');
 
 const SlackClient = require('./slackClient');
 const { registerEvents } = require('./slackEvents');
-console.log(process.env.SLACK_VERIFICATION_TOKEN);
+
 const slackEventsAdapter = slackEventsApi.createSlackEventAdapter('vNtGGM4nuwF36koKluSlM8Dt', { includeBody: true });
 const slackWebClient = new WebClient('xoxp-327667997619-327667997651-337075952069-e627b7d02f60ff0d63b7b1176e1cb487');
 const slackClient = new SlackClient(slackEventsAdapter, slackWebClient);

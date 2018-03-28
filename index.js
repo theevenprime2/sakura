@@ -26,8 +26,8 @@ const app = express();
 app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/bye', (req, res) => res.send('bye!'))
 
-app.listen(port, () => console.log(`zServer listening on port ${port}`));
+// app.listen(port, () => console.log(`zServer listening on port ${port}`));
 
-// http.createServer(app).listen(port, () => {
-//   console.log(`Server listening on port ${port}`);
-// });
+http.createServer(app).listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
